@@ -86,6 +86,6 @@ INSERT INTO items (`title`, `description`, `price`, `image`, `cat_id`, `status`)
 DELETE FROM items WHERE cat_id=1;
 
 
-INSERT INTO category (`title`, `description`, `price`, `image`, `cat_id`, `status`) values
+INSERT INTO items (`title`, `description`, `price`, `image`, `cat_id`, `status`) values
 ('iPod touch', 'iPod touch gives you a beautiful canvas for your messages, photos, videos and more. Everything is sharp, vivid and lifelike. All on a device that’s 6.1 mm thin and just 88 grams, so you can take it anywhere.', 249, 'assets/img/5fd1ce006f19f6.95540577.jpg', 5, 'SHOW')
 
