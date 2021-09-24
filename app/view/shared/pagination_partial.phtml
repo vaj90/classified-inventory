@@ -1,0 +1,51 @@
+<?php 
+    $urlPgn= URL . $list_link;
+?>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+        <?php if($page_number>1): ?>
+            <li class="page-item">
+                <?php
+                    $c_param = $param;
+                    $c_param["page"] = $page_number-1;
+                    $str_param = [];
+                    foreach($c_param as $key=>$value){
+                        $str_param[] = "$key=$value";
+                    }
+                ?>
+                <a class="page-link" href="<?php echo $urlPgn . "?" . join("&", $str_param);?>" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+        <?php endif; ?>
+        <?php for($x = 1; $x <= $page_count; $x++): ?>
+            <?php
+                $c_param = $param;
+                $c_param["page"] = $x;  
+                $status = $page_number == $x ? "active": "";
+                $str_param = [];
+                foreach($c_param as $key=>$value){
+                    $str_param[] = "$key=$value";
+                }
+            ?>
+            <li class="page-item <?php echo $status;?>">
+                <a class="page-link" href="<?php echo $urlPgn . "?" . join("&", $str_param);?>"><?php echo $x;?></a>
+            </li>
+        <?php endfor; ?>
+        <?php if($page_number<$page_count): ?>
+            <li class="page-item">
+                <?php
+                    $c_param = $param;
+                    $c_param["page"] = $page_number+1;  
+                    $str_param = [];
+                    foreach($c_param as $key=>$value){
+                        $str_param[] = "$key=$value";
+                    }
+                ?>
+                <a class="page-link" href="<?php echo $urlPgn . "?" . join("&", $str_param);?>" aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        <?php endif; ?>
+    </ul>
+</nav>

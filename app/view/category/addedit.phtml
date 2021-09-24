@@ -1,0 +1,50 @@
+<?php
+    global $vw;
+    $vh = $vw . 'shared/admin_header.phtml';
+    require $vh;
+?>
+<main>
+    <div class="container">
+        <h4 class="custom-content-title"><?php echo $this->title ?></h4>
+        <hr>
+        <form class="form-category" method="post" action="<?php echo URL;?>category/savesubmit">
+            <input type="hidden" name="id" value="<?php echo $this->model['id'] ?>">
+            <input type="hidden" name="task" value="<?php echo $this->task ?>">
+            <div class="form-group row">
+                <label for="categoryTitle" class="text-right col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" required class="form-control" id="categoryTitle" name="title" placeholder="Please insert title" value="<?php echo $this->model['title'] ?>">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="categoryDescription" class="text-right col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                    <textarea type="text" required class="form-control" id="categoryDescription" name="description" placeholder="Please insert description"><?php echo $this->model['description'] ?></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="categoryStatus" class="text-right col-sm-2 col-form-label">Status</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="statusShow" value="SHOW" <?php echo $this->model['status']=="SHOW"?"checked='checked'":"";?>>
+                        <label class="form-check-label" for="statusShow">
+                            SHOW
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="statusHide" value="HIDE" <?php echo $this->model['status']=="HIDE"?"checked='checked'":"";?>>
+                        <label class="form-check-label" for="statusHide">
+                            HIDE
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row row">
+                <div class="col-sm-10 offset-md-2 ">
+                    <button type="submit" class="btn btn-sm btn-primary"> Save Changes</button>
+                    <a class="btn btn-sm btn-secondary" href="<?php echo URL;?>category/list"> Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>

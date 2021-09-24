@@ -1,0 +1,32 @@
+<?php
+    global $vw;
+    $vh = $vw . 'shared/admin_header.phtml';
+    require $vh;
+    $items = $this->items;
+?>
+<main>
+    <div class="container">
+        <h4 class="custom-content-title">Track item views</h4>
+        <?php if($this->model>0):?>
+            <table class="table table-bordered table-category-list">
+                <tr>
+                    <th>Date</th>
+                    <th>Item</th>
+                    <th>Count Views</th>
+                </tr>
+                <?php foreach($this->model as $key=>$value): ?>
+                    <tr>
+                        <td><?php echo $value["date_view"];?></td>
+                        <td><?php echo $items[$value["item_id"]];?></td>
+                        <td><?php echo $value["count"];?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php else:?>
+            <div class="text-center">
+                <h5>No categories are listed</h5>
+            </div>
+        <?php endif;?>
+        
+    </div>
+</main>

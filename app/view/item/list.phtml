@@ -1,0 +1,67 @@
+
+<?php
+    global $vw;
+    $vh = $vw . 'shared/admin_header.phtml';
+    $cpv = $vw . 'shared/category_partial.phtml';
+    $pgn = $vw . 'shared/pagination_partial.phtml';
+    require $vh;
+    $pg = $this->pagination;
+    $categories = $this->categories;
+    $mo = $this->model;
+    $dm =  $this->db_manager;
+    $page_number = intVal($pg['page_number']);
+    $page_count = intVal($pg['page_count']);
+    $total_item = intVal($pg['total_item']);
+    $start = (($page_number - 1) * 3) +1;
+    $end = ($page_number * 3) > $total_item ? $total_item : ($page_number * 3);
+    $list_link = "item/list";
+    $param = [];
+    if(isset($_GET['category'])){
+        $param["category"] = $_GET['category'];
+    }
+?>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <?php require $cpv;?>
+            </div>
+            <div class="col-md-8">
+                <h4 class="custom-content-title">Items
+                    <div class="float-right">
+                        <a class="btn btn-primary btn-sm" href="<?php echo URL;?>item/add"><span class="fa fa-plus"></span> Add New Item</a>
+                    </div>
+                </h4>
+                <?php if(count($mo)>0):?>
+                    <ul class="list-unstyled">
+                        <?php for($x =($start-1); $x < $end; $x++): ?>
+                            <li class="media my-4">
+                                <div class="custom-img-con mr-4 ">
+                                    <img src="<?php echo URL . $mo[$x]["image"];?>" class="img-thumbnail custom-img" alt="<?php echo $mo[$x]["title"];?>">
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1"><?php echo $mo[$x]["title"];?></h5>
+                                    <?php echo $mo[$x]["description"];?>
+                                    <div class="text-right mt-4">
+                                        <a class="btn btn-primary btn-sm" href="<?php echo URL . 'item/edit/' .  $mo[$x]["id"];?>"><span class="fa fa-pencil"></span> Modify</a>
+                                        <button class="btn btn-danger btn-sm btn-item-delete" data-title="<?php echo $mo[$x]["title"];?>" data-action="<?php echo URL . 'item/delete/' .  $mo[$x]["id"];?>"><span class="fa fa-trash-o"></span> Delete</button>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php endfor; ?>
+                    </ul>
+                <?php else:?>
+                    <div class="text-center">
+                        <h5>No items are listed</h5>
+                    </div>
+                <?php endif;?>
+                <?php if(count($mo)>0):?>
+                    <div class="text-right mt-3">
+                        <?php require $pgn;?>
+                    </div>
+                <?php endif;?>
+            </div>
+        </div>
+    </div>
+</main>
+

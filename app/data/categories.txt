@@ -1,0 +1,5 @@
+1	Electronics	Associated passive electrical components, and interconnection technologies.
+2	Mobile Phones	Also known as a hand phone, cell phone, or cellular telephone
+3	Camera	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur commodo vestibulum. 
+4	Gaming Console	Donec tempus fermentum nisi vehicula dignissim. Sed rhoncus ullamcorper dolor eu dictum
+5	Music Player	An electronic device that can play MP3 digital audio files. 

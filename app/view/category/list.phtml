@@ -1,0 +1,47 @@
+<?php
+    global $vw;
+    $vh = $vw . 'shared/admin_header.phtml';
+    require $vh;
+?>
+<main>
+    <div class="container">
+        <div class="float-right">
+            <a class="btn btn-primary" href="<?php echo URL;?>category/add"><span class="fa fa-plus"></span> Add New Category</a>
+        </div>
+        <h4 class="custom-content-title">Categories</h4>
+        <?php if($this->model>0):?>
+            <table class="table table-hover table-bordered table-category-list">
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center" style="width: 140px;">Action</th>
+                </tr>
+                <?php foreach($this->model as $key=>$value): ?>
+                    <tr>
+                        <td><?php echo $value["title"];?></td>
+                        <td><?php echo $value["description"];?></td>
+                        <td>
+                            <?php
+                                $status = $value["status"]=="SHOW"? "checked=checked": "";
+                            ?>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="status" disabled <?php echo $status;?>/>
+                                <label class="custom-control-label" for="status">show/hide</label>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-primary btn-sm" href="<?php echo URL . 'category/edit/' .  $value["id"];?>"><span class="fa fa-pencil"></span></a>
+                            <button class="btn btn-danger btn-sm btn-category-delete" data-title="<?php echo $value["id"];?>" data-action="<?php echo URL . 'category/delete/' .  $value["id"];?>"><span class="fa fa-trash-o"></span></button>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php else:?>
+            <div class="text-center">
+                <h5>No categories are listed</h5>
+            </div>
+        <?php endif;?>
+        
+    </div>
+</main>

@@ -1,0 +1,17 @@
+<?php
+global $vw;
+$vh = $vw . 'shared/admin_header.phtml';
+require $vh;
+?>
+<main>
+    <div class="container">
+        <ul class="custom-ul">
+            <li>
+                <a href="<?php echo URL;?>item/list"><span class="fa fa-th-large"></span> # items</a>
+            </li>
+            <li>
+                <a href="<?php echo URL;?>category/list"><span class="fa fa-th-list"></span> # categories</a>
+            </li>
+        </ul>
+    </div>
+</main>

@@ -1,0 +1,25 @@
+<?php
+    $urlPgn= URL . $list_link;
+    $category_list = $categories;
+    $category_selected = "";
+    if(isset($_GET['category'])){
+        $category_info = $dm->getCategoryById(intVal($_GET['category']));
+        $category_selected = $category_info["title"];
+    }
+?>
+<h3 class="custom-content-title">Categories</h3>
+<div class="list-group">
+    <?php foreach($category_list as $key=>$value): ?>
+        <?php
+            $c_param = $param;
+            $c_param["category"] = $value["id"];
+            $str_param = [];
+            foreach($c_param as $k=>$v){
+                $str_param[] = "$k=$v";
+            }
+        ?>
+        <a class="list-group-item list-group-item-action <?php echo $value["title"]==$category_selected? "active":""; ?>" href="<?php echo $urlPgn . "?" . join("&", $str_param);?>">
+            <?php echo $value["title"]?>
+        </a>
+    <?php endforeach; ?>
+</div>

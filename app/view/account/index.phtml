@@ -1,0 +1,39 @@
+<?php
+    global $vw;
+    $vh = $vw . 'shared/admin_header.phtml';
+    require $vh;
+?>
+<main>
+    <div class="container">
+        <div class="float-right">
+            <a class="btn btn-primary btn-sm" href="<?php echo URL;?>account/add"><span class="fa fa-plus"></span> Add New Account</a>
+        </div>
+        <h4 class="custom-content-title">Account</h4>
+        <?php if($this->model>0):?>
+            <table class="table table-hover table-bordered table-category-list">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th class="text-center" style="width: 140px;">Action</th>
+                </tr>
+                <?php foreach($this->model as $key=>$value): ?>
+                    <tr>
+                        <td><?php echo $value["first_name"];?></td>
+                        <td><?php echo $value["last_name"];?></td>
+                        <td><?php echo $value["email"];?></td>
+                        <td class="text-center">
+                            <a class="btn btn-primary btn-sm" href="<?php echo URL . 'account/edit/' .  $value["id"];?>"><span class="fa fa-pencil"></span></a>
+                            <button class="btn btn-danger btn-sm btn-member-delete" data-title="<?php echo $value["id"];?>" data-action="<?php echo URL . 'account/delete/' .  $value["id"];?>"><span class="fa fa-trash-o"></span></button>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php else:?>
+            <div class="text-center">
+                <h5>No categories are listed</h5>
+            </div>
+        <?php endif;?>
+        
+    </div>
+</main>

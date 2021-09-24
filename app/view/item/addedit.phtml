@@ -1,0 +1,75 @@
+<?php
+    global $vw;
+    $vh = $vw . 'shared/admin_header.phtml';
+    require $vh;
+?>
+<main>
+    <div class="container">
+        <h4 class="custom-content-title"><?php echo $this->title ?></h4>
+        <hr>
+        <form class="form-item" method="post" action="<?php echo URL;?>item/savesubmit" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="<?php echo $this->model['id'] ?>">
+            <input type="hidden" name="task" value="<?php echo $this->task ?>">
+            <div class="form-group row">
+                <label for="itemTitle" class="text-right col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" required class="form-control" id="itemTitle" name="title" placeholder="Please insert title" value="<?php echo $this->model['title'] ?>">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="itemDescription" class="text-right col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                    <textarea type="text" required class="form-control" id="itemDescription" name="description" placeholder="Please insert description"><?php echo $this->model['description'] ?></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="itemCategoryId" class="text-right col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-10">
+                    <select name="cat_id" required class="custom-select" id="itemCategoryId">
+                        <?php foreach($this->categories as $key=>$value): ?>
+                            <option value="<?php echo $value["id"];?>" <?php if($value["id"] == $this->model['cat_id']) { echo "selected";}?>><?php echo $value["title"]?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="itemPrice" class="text-right col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-10">
+                    <input type="text" required class="form-control" id="itemPrice" name="price" value="<?php echo $this->model['price'] ?>">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="itemImage" class="text-right col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="image" id="itemImage" aria-describedby="itemImageFileAddon">
+                        <label class="custom-file-label" for="itemImage"><?php echo $this->task=="add"? "Choose file": $this->model['image']; ?></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="categoryStatus" class="text-right col-sm-2 col-form-label">Status</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="statusShow" value="SHOW" <?php echo $this->model['status']=="SHOW"?"checked='checked'":"";?>>
+                        <label class="form-check-label" for="statusShow">
+                            SHOW
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="status" id="statusHide" value="HIDE" <?php echo $this->model['status']=="HIDE"?"checked='checked'":"";?>>
+                        <label class="form-check-label" for="statusHide">
+                            HIDE
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row row">
+                <div class="col-sm-10 offset-md-2 ">
+                    <button type="submit" class="btn btn-primary"> Save Changes</button>
+                    <a class="btn btn-secondary" href="<?php echo URL;?>item/list"> Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>

@@ -1,0 +1,48 @@
+<?php
+    global $ctrlr;
+    $dm = new DbManager(DBHOST,DBUSER,DBPASS,DBNAME);
+    $getCategies = $dm->getAllCategories();
+?>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg">
+        <div class="container">
+            <a class="navbar-brand" href="<?php echo URL;?>">My Classified</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item <?php if($ctrlr=="home"){ echo "active"; }?>">
+                        <a class="nav-link" href="<?php echo URL ?>">Home <?php if($ctrlr=="home")  { echo '<span class="sr-only">(current)</span>'; }?></a>
+                    </li>
+                    <li class="nav-item <?php if($ctrlr=="item"){ echo "active"; }?>">
+                        <a class="nav-link" href="<?php echo URL . 'items'?>">Items <?php if($ctrlr=="item")  { echo '<span class="sr-only">(current)</span>'; }?></a>
+                    </li>
+                    <li class="nav-item dropdown <?php if($ctrlr=="category"){ echo "active"; }?>"">
+                        <div class="nav-link">
+                            <a href="<?php echo URL . 'categories'?>">Categories </a>
+                            <a class="dropdown-toggle" href="" id="navbarCategoriesDropDownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="navbarCategoriesDropDownMenu">
+                                <?php foreach($getCategies as $key=>$value): ?>
+                                    <a class="dropdown-item" href="<?php echo URL;?>item?category=<?php echo $value[0];?>">
+                                        <?php echo $value[1]?>
+                                    </a>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item <?php if($ctrlr=="search"){ echo "active"; }?>">
+                        <a class="nav-link" href="<?php echo URL . 'search'?>">Search <?php if($ctrlr=="search")  { echo '<span class="sr-only">(current)</span>'; }?></a>
+                    </li>
+                </ul>
+                <?php
+                    global $logged;
+                    $login_url = URL . "account/logout";
+                    $logout_url = URL . "account/logout";
+                    $btnLog = $logged ? "<a class='btn btn-outline-custom' href='$login_url'><span class='fa fa-sign-out'></span> Logout</a>" : "<a class='btn btn-outline-custom' href='$logout_url'><span class='fa fa-sign-in'></span> LogIn</a>";
+                    echo $btnLog;
+                ?>
+            </div>
+        </div>
+    </nav>
+</header>

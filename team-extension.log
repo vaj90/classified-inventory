@@ -1,0 +1,96 @@
+2020-12-08T17:58:46.940Z - info:   [14372] *** FOLDER: d:\xampp\htdocs\assigment2 ***
+2020-12-08T17:58:46.941Z - info:   [14372] AzureReposVSCode/1.161.1 (VSCode 1.51.1; Windows_NT 10.0.19041; Node 12.14.1)
+2020-12-08T17:58:46.941Z - debug:  [14372] Looking for an External Context at d:\xampp\htdocs\assigment2
+2020-12-08T17:58:46.941Z - debug:  [14372] No External Context at d:\xampp\htdocs\assigment2
+2020-12-08T17:58:46.941Z - debug:  [14372] Looking for TFVC repository at d:\xampp\htdocs\assigment2
+2020-12-08T17:58:46.942Z - debug:  [14372] TFVC Creating Tfvc object with localPath='undefined'
+2020-12-08T17:58:46.942Z - debug:  [14372] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2020-12-08T17:58:46.942Z - debug:  [14372] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2020-12-08T17:58:46.942Z - warn:   [14372] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2020-12-08T17:58:46.942Z - error:  [14372] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2020-12-08T17:59:00.995Z - debug:  [14372] Reinitializing due to onDidChangeConfiguration
+2020-12-08T17:59:00.996Z - debug:  [14372] Polling interval value (minutes): 12
+2020-12-08T17:59:00.998Z - info:   [14372] *** FOLDER: d:\xampp\htdocs\assigment2 ***
+2020-12-08T17:59:00.998Z - info:   [14372] AzureReposVSCode/1.161.1 (VSCode 1.51.1; Windows_NT 10.0.19041; Node 12.14.1)
+2020-12-08T17:59:00.998Z - debug:  [14372] Looking for an External Context at d:\xampp\htdocs\assigment2
+2020-12-08T17:59:00.999Z - debug:  [14372] No External Context at d:\xampp\htdocs\assigment2
+2020-12-08T17:59:01.005Z - debug:  [14372] Looking for TFVC repository at d:\xampp\htdocs\assigment2
+2020-12-08T17:59:01.005Z - debug:  [14372] TFVC Creating Tfvc object with localPath='undefined'
+2020-12-08T17:59:01.005Z - debug:  [14372] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2020-12-08T17:59:01.006Z - debug:  [14372] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2020-12-08T17:59:01.006Z - warn:   [14372] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2020-12-08T17:59:01.006Z - error:  [14372] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2020-12-08T18:01:58.642Z - debug:  [14372] Reinitializing due to onDidChangeConfiguration
+2020-12-08T18:01:58.643Z - debug:  [14372] Polling interval value (minutes): 12
+2020-12-08T18:01:58.644Z - info:   [14372] *** FOLDER: d:\xampp\htdocs\assigment2 ***
+2020-12-08T18:01:58.644Z - info:   [14372] AzureReposVSCode/1.161.1 (VSCode 1.51.1; Windows_NT 10.0.19041; Node 12.14.1)
+2020-12-08T18:01:58.644Z - debug:  [14372] Looking for an External Context at d:\xampp\htdocs\assigment2
+2020-12-08T18:01:58.644Z - debug:  [14372] No External Context at d:\xampp\htdocs\assigment2
+2020-12-08T18:01:58.650Z - debug:  [14372] Looking for TFVC repository at d:\xampp\htdocs\assigment2
+2020-12-08T18:01:58.650Z - debug:  [14372] TFVC Creating Tfvc object with localPath='undefined'
+2020-12-08T18:01:58.650Z - debug:  [14372] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2020-12-08T18:01:58.650Z - debug:  [14372] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2020-12-08T18:01:58.651Z - warn:   [14372] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2020-12-08T18:01:58.651Z - error:  [14372] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2020-12-08T18:02:00.809Z - debug:  [14372] Reinitializing due to onDidChangeConfiguration
+2020-12-08T18:02:00.810Z - debug:  [14372] Polling interval value (minutes): 12
+2020-12-08T18:02:00.811Z - info:   [14372] *** FOLDER: d:\xampp\htdocs\assigment2 ***
+2020-12-08T18:02:00.812Z - info:   [14372] AzureReposVSCode/1.161.1 (VSCode 1.51.1; Windows_NT 10.0.19041; Node 12.14.1)
+2020-12-08T18:02:00.812Z - debug:  [14372] Looking for an External Context at d:\xampp\htdocs\assigment2
+2020-12-08T18:02:00.812Z - debug:  [14372] No External Context at d:\xampp\htdocs\assigment2
+2020-12-08T18:02:00.817Z - debug:  [14372] Looking for TFVC repository at d:\xampp\htdocs\assigment2
+2020-12-08T18:02:00.817Z - debug:  [14372] TFVC Creating Tfvc object with localPath='undefined'
+2020-12-08T18:02:00.817Z - debug:  [14372] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2020-12-08T18:02:00.817Z - debug:  [14372] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2020-12-08T18:02:00.818Z - warn:   [14372] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2020-12-08T18:02:00.818Z - error:  [14372] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2020-12-08T18:25:42.415Z - info:   [18924] *** FOLDER: d:\xampp\htdocs\assigment2 ***
+2020-12-08T18:25:42.415Z - info:   [18924] AzureReposVSCode/1.161.1 (VSCode 1.51.1; Windows_NT 10.0.19041; Node 12.14.1)
+2020-12-08T18:25:42.415Z - debug:  [18924] Looking for an External Context at d:\xampp\htdocs\assigment2
+2020-12-08T18:25:42.415Z - debug:  [18924] No External Context at d:\xampp\htdocs\assigment2
+2020-12-08T18:25:42.455Z - debug:  [18924] Looking for TFVC repository at d:\xampp\htdocs\assigment2
+2020-12-08T18:25:42.455Z - debug:  [18924] TFVC Creating Tfvc object with localPath='undefined'
+2020-12-08T18:25:42.455Z - debug:  [18924] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2020-12-08T18:25:42.455Z - debug:  [18924] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2020-12-08T18:25:42.456Z - warn:   [18924] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2020-12-08T18:25:42.456Z - error:  [18924] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2020-12-08T18:35:44.796Z - info:   [19504] *** FOLDER: d:\xampp\htdocs\assignment2 ***
+2020-12-08T18:35:44.796Z - info:   [19504] AzureReposVSCode/1.161.1 (VSCode 1.51.1; Windows_NT 10.0.19041; Node 12.14.1)
+2020-12-08T18:35:44.797Z - debug:  [19504] Looking for an External Context at d:\xampp\htdocs\assignment2
+2020-12-08T18:35:44.797Z - debug:  [19504] No External Context at d:\xampp\htdocs\assignment2
+2020-12-08T18:35:44.798Z - debug:  [19504] Looking for TFVC repository at d:\xampp\htdocs\assignment2
+2020-12-08T18:35:44.798Z - debug:  [19504] TFVC Creating Tfvc object with localPath='undefined'
+2020-12-08T18:35:44.799Z - debug:  [19504] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2020-12-08T18:35:44.799Z - debug:  [19504] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2020-12-08T18:35:44.799Z - warn:   [19504] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2020-12-08T18:35:44.800Z - error:  [19504] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2020-12-09T15:03:05.862Z - info:   [0500] *** FOLDER: d:\xampp\htdocs\assignment2 ***
+2020-12-09T15:03:05.862Z - info:   [0500] AzureReposVSCode/1.161.1 (VSCode 1.51.1; Windows_NT 10.0.19041; Node 12.14.1)
+2020-12-09T15:03:05.863Z - debug:  [0500] Looking for an External Context at d:\xampp\htdocs\assignment2
+2020-12-09T15:03:05.863Z - debug:  [0500] No External Context at d:\xampp\htdocs\assignment2
+2020-12-09T15:03:05.894Z - debug:  [0500] Looking for TFVC repository at d:\xampp\htdocs\assignment2
+2020-12-09T15:03:05.894Z - debug:  [0500] TFVC Creating Tfvc object with localPath='undefined'
+2020-12-09T15:03:05.895Z - debug:  [0500] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2020-12-09T15:03:05.895Z - debug:  [0500] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2020-12-09T15:03:05.896Z - warn:   [0500] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2020-12-09T15:03:05.896Z - error:  [0500] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2021-09-23T21:46:12.477Z - info:   [03176] *** FOLDER: d:\GBC Course\Sem3-2020\COMP 1230 - Advanced Web Programming\assignment2\assignment2 ***
+2021-09-23T21:46:12.477Z - info:   [03176] AzureReposVSCode/1.161.1 (VSCode 1.60.1; Windows_NT 10.0.19043; Node 14.16.0)
+2021-09-23T21:46:12.477Z - debug:  [03176] Looking for an External Context at d:\GBC Course\Sem3-2020\COMP 1230 - Advanced Web Programming\assignment2\assignment2
+2021-09-23T21:46:12.477Z - debug:  [03176] No External Context at d:\GBC Course\Sem3-2020\COMP 1230 - Advanced Web Programming\assignment2\assignment2
+2021-09-23T21:46:12.478Z - debug:  [03176] Looking for TFVC repository at d:\GBC Course\Sem3-2020\COMP 1230 - Advanced Web Programming\assignment2\assignment2
+2021-09-23T21:46:12.478Z - debug:  [03176] TFVC Creating Tfvc object with localPath='undefined'
+2021-09-23T21:46:12.479Z - debug:  [03176] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2021-09-23T21:46:12.479Z - debug:  [03176] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2021-09-23T21:46:12.479Z - warn:   [03176] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2021-09-23T21:46:12.479Z - error:  [03176] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.
+2021-09-23T22:26:47.783Z - info:   [23680] *** FOLDER: c:\xampp\htdocs\assignment2 ***
+2021-09-23T22:26:47.784Z - info:   [23680] AzureReposVSCode/1.161.1 (VSCode 1.60.2; Windows_NT 10.0.19043; Node 14.16.0)
+2021-09-23T22:26:47.784Z - debug:  [23680] Looking for an External Context at c:\xampp\htdocs\assignment2
+2021-09-23T22:26:47.784Z - debug:  [23680] No External Context at c:\xampp\htdocs\assignment2
+2021-09-23T22:26:47.785Z - debug:  [23680] Looking for TFVC repository at c:\xampp\htdocs\assignment2
+2021-09-23T22:26:47.785Z - debug:  [23680] TFVC Creating Tfvc object with localPath='undefined'
+2021-09-23T22:26:47.786Z - debug:  [23680] Using TFS proxy: https://tfisolutions.visualstudio.com/
+2021-09-23T22:26:47.786Z - debug:  [23680] TFVC Retrieved from settings; localPath='C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe'
+2021-09-23T22:26:47.786Z - warn:   [23680] TFVC C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe does not exist.
+2021-09-23T22:26:47.787Z - error:  [23680] Unable to find the TF executable. Please ensure TF is installed and the path specified contains the filename.

@@ -1,0 +1,32 @@
+<?php
+    global $ctrlr;
+?>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg">
+        <div class="container">
+            <a class="navbar-brand" href="<?php echo URL;?>dashboard">My Classified (Dashboard)</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item <?php if($ctrlr=="dashboard"){ echo "active"; }?>">
+                        <a class="nav-link" href="<?php echo URL . 'dashboard' ?>">Dashboard <?php if($ctrlr=="dashboard")  { echo '<span class="sr-only">(current)</span>'; }?></a>
+                    </li>
+                    <li class="nav-item <?php if($ctrlr=="item"){ echo "active"; }?>">
+                        <a class="nav-link" href="<?php echo URL . 'item/list' ?>">Items <?php if($ctrlr=="item")  { echo '<span class="sr-only">(current)</span>'; }?></a>
+                    </li>
+                    <li class="nav-item <?php if($ctrlr=="category"){ echo "active"; }?>">
+                        <a class="nav-link" href="<?php echo URL . 'category/list' ?>">Categories <?php if($ctrlr=="category")  { echo '<span class="sr-only">(current)</span>'; }?></a>
+                    </li>
+                    <li class="nav-item <?php if($ctrlr=="search"){ echo "active"; }?>">
+                        <a class="nav-link" href="<?php echo URL . 'search' ?>">Search <?php if($ctrlr=="search")  { echo '<span class="sr-only">(current)</span>'; }?></a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-custom" href="<?php echo URL;?>track"><span class="fa fa-graph"></span> Track</a>
+                <a class="btn btn-outline-custom" href="<?php echo URL;?>account"><span class="fa fa-users"></span> Accounts</a>
+                <a class="btn btn-outline-custom" href="<?php echo URL;?>account/logout"><span class="fa fa-sign-out"></span> Logout</a>
+            </div>
+        </div>
+    </nav>
+</header>
